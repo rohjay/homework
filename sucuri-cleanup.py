@@ -15,6 +15,8 @@ def salt_replace()
     """
     Replace the salts in the installs wp-config.php file & grab the prefix while we're there.
     """
+    pass
     wp_config = open("/nas/content/live/"+ install + "/wp-config.php", r+)
+    regex_list=["AUTH_KEY","SECURE_AUTH_KEY","LOGGED_IN_KEY","NONCE_KEY","AUTH_SALT","SECURE_AUTH_SALT","LOGGED_IN_SALT","NONCE_SALT"]
+    regex=re.compile()
     for line in wp_config:
-        
